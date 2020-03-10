@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:statusBarColor="#000"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="99dp"
+        android:backgroundTint="#009688"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHighlight="#CDDC39"
+        android:textColorLink="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblLogin" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="99dp"
+        android:backgroundTint="#009688"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#03A9F4"
+        android:textColorLink="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSenha" />
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="132dp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:text="@string/username"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSenha"
+        android:layout_width="108dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="152dp"
+        android:drawableLeft="@drawable/ic_fingerprint_black_24dp"
+        android:text="@string/senha"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:buttonTint="#1B5E20"
+        android:checked="false"
+        android:text="@string/mostrar_senha"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="121dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#212121"
+        android:onClick="onClickCadastrar"
+        android:text="@string/cadastrar"
+        android:textColor="#F4EEEE"
+        app:layout_constraintEnd_toStartOf="@+id/btnJogar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="81dp"
+        android:backgroundTint="#212121"
+        android:onClick="onClickJogar"
+        android:text="@string/jogar"
+        android:textColor="#F4EEEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackjack" />
+</androidx.constraintlayout.widget.ConstraintLayout>

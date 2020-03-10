@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BlackJack</string>
+    <string name="username">USERNAME</string>
+    <string name="senha">SENHA</string>
+    <string name="mostrar_senha">Mostrar Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="jogar">Jogar</string>
+    <string name="comprar">Comprar</string>
+    <string name="parar">Parar</string>
+    <string name="vitorias">VITÓRIAS:</string>
+    <string name="derrotas">DERROTAS:</string>
+    <string name="novo_jogo">NOVO JOGO</string>
+    <string name="score">SCORE :</string>
+    <string name="nome">NOME</string>
+    <string name="e_mail">E-MAIL</string>
+    <string name="cadastro_de_jogadores">CADASTRO DE JOGADORES</string>
+</resources>
